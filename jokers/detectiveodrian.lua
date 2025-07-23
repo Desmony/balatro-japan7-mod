@@ -3,7 +3,7 @@ SMODS.Joker{ --Detective Odrian
     key = "detectiveodrian",
     config = {
         extra = {
-            active_chase = 0,
+            active_chase = 'j7_no',
             mult = 1
         }
     },
@@ -28,7 +28,7 @@ SMODS.Joker{ --Detective Odrian
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.active_chase, card.ability.extra.mult, localize((G.GAME.current_round.suit_suspect_card or {}).suit or 'Spades', 'suits_singular'), localize((G.GAME.current_round.rank_suspect_card or {}).rank or 'Ace', 'ranks')}, colours = {G.C.SUITS[(G.GAME.current_round.suit_suspect_card or {}).suit or 'Spades']}}
+        return {vars = {localize(card.ability.extra.active_chase), card.ability.extra.mult, localize((G.GAME.current_round.suit_suspect_card or {}).suit or 'Spades', 'suits_singular'), localize((G.GAME.current_round.rank_suspect_card or {}).rank or 'Ace', 'ranks')}, colours = {G.C.SUITS[(G.GAME.current_round.suit_suspect_card or {}).suit or 'Spades']}}
     end,
 
     set_ability = function(self, card, initial)
@@ -73,7 +73,7 @@ end)() then
                     end
                 return {
                     func = function()
-                    card.ability.extra.active_chase = 1
+                    card.ability.extra.active_chase = 'j7_yes'
                     return true
                 end,
                     extra = {
@@ -88,9 +88,9 @@ end)() then
         end
         if context.individual and context.cardarea == G.play and not context.blueprint then
             context.other_card.should_destroy = false
-            if ((card.ability.extra.active_chase or 0) == 1 and context.other_card:get_id() == G.GAME.current_round.rank_suspect_card.id and context.other_card:is_suit(G.GAME.current_round.suit_suspect_card.suit)) then
+            if ((card.ability.extra.active_chase or 'j7_no') == 'j7_yes' and context.other_card:get_id() == G.GAME.current_round.rank_suspect_card.id and context.other_card:is_suit(G.GAME.current_round.suit_suspect_card.suit)) then
                 context.other_card.should_destroy = true
-                card.ability.extra.active_chase = 0
+                card.ability.extra.active_chase = 'j7_no'
                 card.ability.extra.mult = (card.ability.extra.mult) + 1
                 return {
                     message = "The criminal has been arrested!"
