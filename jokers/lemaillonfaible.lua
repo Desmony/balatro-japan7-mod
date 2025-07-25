@@ -11,8 +11,8 @@ SMODS.Joker{ --Le Maillon Faible
     loc_txt = {
         ['name'] = 'Le Maillon Faible',
         ['text'] = {
-            [1] = 'If the scoring card is the lowest rank in played hand, destroy it.',
-            [2] = '{C:green}#1# in #2#{} chance of earning {C:gold}$5{} when destroying this card.'
+            [1] = 'Destroys the lowest ranked cards in your played hand if they score.',
+            [2] = '{C:green}#1# in #2#{} chance of earning {C:gold}$5{} when destroying those cards.'
         }
     },
     pos = {
