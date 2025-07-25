@@ -23,6 +23,7 @@ SMODS.Joker{ --Pierre Jeanjoker
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
+    perishable_compat = false,
     unlocked = true,
     discovered = true,
     enhancement_gate = 'm_stone',

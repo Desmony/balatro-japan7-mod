@@ -21,6 +21,7 @@ SMODS.Joker{ --Pon-nya!
     rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
+    perishable_compat = false,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
