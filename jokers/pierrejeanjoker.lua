@@ -25,6 +25,7 @@ SMODS.Joker{ --Pierre Jeanjoker
     eternal_compat = true,
     unlocked = true,
     discovered = true,
+    enhancement_gate = 'm_stone',
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
