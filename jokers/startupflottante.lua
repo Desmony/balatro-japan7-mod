@@ -39,7 +39,7 @@ SMODS.Joker{ --Startup flottante
         if context.selling_card and not context.blueprint then
                 return {
                     func = function()
-                    card.ability.extra.chips = (card.ability.extra.chips) + pseudorandom('chips_5cedf832', 1, 25)
+                    card.ability.extra.chips = (card.ability.extra.chips) + pseudorandom('chips_5cedf832', 1, 10)
                     return true
                 end,
                     message = "Upgraded!"
