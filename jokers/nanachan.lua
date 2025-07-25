@@ -3,13 +3,13 @@ SMODS.Joker{ --Nana-Chan
     key = "nanachan",
     config = {
         extra = {
-            money÷10 = 1
+            money÷15 = 1
         }
     },
     loc_txt = {
         ['name'] = 'Nana-Chan',
         ['text'] = {
-            [1] = '{X:red,C:white}X1{} Mult for every {C:gold}$10{} you have',
+            [1] = '{X:red,C:white}X1{} Mult for every {C:gold}$15{} you have',
             [2] = '{C:inactive}(Currently {X:red,C:white}X#1#{} Mult){}'
         }
     },
@@ -30,13 +30,13 @@ SMODS.Joker{ --Nana-Chan
     },
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.money÷10 + ((math.floor(G.GAME.dollars / 10) or 0))}}
+        return {vars = {card.ability.extra.money÷15 + ((math.floor(G.GAME.dollars / 15) or 0))}}
     end,
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main then
                 return {
-                    Xmult = card.ability.extra.money÷10 + (math.floor(G.GAME.dollars / 10))
+                    Xmult = card.ability.extra.money÷15 + (math.floor(G.GAME.dollars / 15))
                 }
         end
     end
