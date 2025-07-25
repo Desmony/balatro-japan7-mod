@@ -1,5 +1,5 @@
 SMODS.Joker{ --Clément
-    name = "Clément",
+    name = "Zogogo",
     key = "clment",
     config = {
         extra = {
@@ -8,7 +8,7 @@ SMODS.Joker{ --Clément
         }
     },
     loc_txt = {
-        ['name'] = 'Clément',
+        ['name'] = 'Zogogo',
         ['text'] = {
             [1] = 'This joker gains {C:red}+9{} Mult when you finish a round in one hand.',
             [2] = '{C:inactive}(Currently {C:red}+#1#{} Mult){}'
