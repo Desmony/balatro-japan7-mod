@@ -22,7 +22,7 @@ SMODS.Joker{ --MKV Cocktail
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
-    eternal_compat = true,
+    eternal_compat = false,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
