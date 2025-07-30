@@ -39,7 +39,7 @@ SMODS.Joker{ --Le Maillon Faible
         end
         if context.individual and context.cardarea == G.play and not context.blueprint then
 		card.ability.extra.lowestrankinhand = (function() local min = 14; for _, card in ipairs(G.play.cards) do if card.base.id < min then min = card.base.id end end; return min end)()
-            context.other_card.should_destroy = false
+            
             if context.other_card:get_id() == card.ability.extra.lowestrankinhand then
                 context.other_card.should_destroy = true
                 return {

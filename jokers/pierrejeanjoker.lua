@@ -39,7 +39,6 @@ SMODS.Joker{ --Pierre Jeanjoker
             return { remove = true }
         end
         if context.individual and context.cardarea == G.play and not context.blueprint then
-            context.other_card.should_destroy = false
             if SMODS.get_enhancements(context.other_card)["m_stone"] == true then
                 context.other_card.should_destroy = true
                 card.ability.extra.pluschips = (card.ability.extra.pluschips) + 25

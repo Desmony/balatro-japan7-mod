@@ -45,13 +45,13 @@ SMODS.Joker{ --Detective Odrian
     calculate = function(self, card, context)
         if context.remove_playing_cards and not context.blueprint then
             if (function()
-    for k, removed_card in ipairs(context.removed) do
-        if removed_card:is_face() then
-            return true
-        end
-    end
-    return false
-end)() then
+                for k, removed_card in ipairs(context.removed) do
+                    if removed_card:is_face() then
+                        return true
+                    end
+                end
+                return false
+            end)() then
                 if G.playing_cards then
                     local valid_suit_suspect_cards = {}
                     for _, v in ipairs(G.playing_cards) do
@@ -93,7 +93,7 @@ end)() then
             return { remove = true }
         end
         if context.individual and context.cardarea == G.play and not context.blueprint then
-            context.other_card.should_destroy = false
+            
             if ((card.ability.extra.active_chase or 'j7_no') == 'j7_yes' and context.other_card:get_id() == G.GAME.current_round.rank_suspect_card.id and context.other_card:is_suit(G.GAME.current_round.suit_suspect_card.suit)) then
                 context.other_card.should_destroy = true
                 card.ability.extra.active_chase = 'j7_no'
