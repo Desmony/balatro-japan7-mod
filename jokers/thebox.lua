@@ -11,8 +11,9 @@ SMODS.Joker{ --The Box
     loc_txt = {
         ['name'] = 'The Box',
         ['text'] = {
-            [1] = '{C:red}+15{} Mult if played hand is now your most played hand.',
-            [2] = '{C:red}-5{} Mult otherwise.'
+            [1] = '{C:red}+15{} Mult if played hand is now',
+            [2] = 'your most played hand.',
+            [3] = '{C:red}-5{} Mult otherwise.'
         }
     },
     pos = {

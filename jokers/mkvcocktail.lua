@@ -12,7 +12,7 @@ SMODS.Joker{ --MKV Cocktail
         ['text'] = {
             [1] = 'This joker gains {X:red,C:white}x0.5{} at the end of the round.',
             [2] = '{C:red}Self-destructs{} after {C:attention}#2#{} rounds.',
-            [3] = '(Currently {X:red,C:white}X#1#{} Mult)'
+            [3] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult)'
         }
     },
     pos = {

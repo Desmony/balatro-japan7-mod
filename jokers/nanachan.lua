@@ -10,7 +10,7 @@ SMODS.Joker{ --Nana-Chan
         ['name'] = 'Nana-Chan',
         ['text'] = {
             [1] = '{X:red,C:white}X1{} Mult for every {C:gold}$15{} you have',
-            [2] = '{C:inactive}(Currently {X:red,C:white}X#1#{} Mult){}'
+            [2] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult){}'
         }
     },
     pos = {

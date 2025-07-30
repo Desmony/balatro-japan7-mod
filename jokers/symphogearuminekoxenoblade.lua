@@ -10,8 +10,10 @@ SMODS.Joker{ --Symphogear Umineko Xenoblade
     loc_txt = {
         ['name'] = 'Symphogear Umineko Xenoblade',
         ['text'] = {
-            [1] = 'Each {C:attention}Queen{} of {C:spades}Spade{} held in hand gives {X:red,C:white}x1.5{} Mult.',
-            [2] = 'Each {C:attention}Queen{} of {C:spades}Spade{} held in hand at the end of the round gives {C:gold}$3{}.'
+            [1] = 'Each {C:attention}Queen{} of {C:spades}Spade{} held',
+            [2] = 'in hand gives {X:red,C:white}x1.5{} Mult.',
+            [3] = 'Each {C:attention}Queen{} of {C:spades}Spade{} held',
+            [4] = 'in hand at the end of the round gives {C:gold}$3{}.'
         }
     },
     pos = {

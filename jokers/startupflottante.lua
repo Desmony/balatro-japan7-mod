@@ -9,8 +9,9 @@ SMODS.Joker{ --Startup flottante
     loc_txt = {
         ['name'] = 'Startup flottante',
         ['text'] = {
-            [1] = 'This joker gains {C:blue}+1-10{} Chips when selling a {C:attention}Card{}',
-            [2] = '{C:inactive}(Currently {C:blue}+#1#{} Chips){}'
+            [1] = 'This joker gains {C:blue}+1-10{} Chips',
+            [2] = 'when selling a {C:attention}Card{}',
+            [3] = '{C:inactive}(Currently {C:blue}+#1#{}{C:inactive} Chips){}'
         }
     },
     pos = {

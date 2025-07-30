@@ -9,8 +9,9 @@ SMODS.Joker{ --Pon-nya!
     loc_txt = {
         ['name'] = 'Pon-nya!',
         ['text'] = {
-            [1] = 'This Joker gains {C:red}+3{} Mult if played hand contains a {C:attention}Three of a Kind{}',
-            [2] = '{C:inactive}(Currently {C:red}+#1#{} Mult){}'
+            [1] = 'This Joker gains {C:red}+3{} Mult',
+            [2] = 'if played hand contains a {C:attention}Three of a Kind{}',
+            [3] = '{C:inactive}(Currently {C:red}+#1#{}{C:inactive} Mult){}'
         }
     },
     pos = {

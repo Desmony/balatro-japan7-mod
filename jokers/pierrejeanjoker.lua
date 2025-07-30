@@ -10,9 +10,10 @@ SMODS.Joker{ --Pierre Jeanjoker
     loc_txt = {
         ['name'] = 'Pierre Jeanjoker',
         ['text'] = {
-            [1] = 'When a {C:attention}Stone{} Card is scored, it is destroyed and this Joker gains {C:blue}+25{} Chips.',
-            [2] = '{C:attention}Stone{} Cards held in hand provides {C:blue}-50{} Chips.',
-            [3] = '{C:inactive}(Currently provides {C:blue}+#1#{} Chips){}'
+            [1] = 'When a {C:attention}Stone{} Card is scored, it is',
+            [2] = 'destroyed and this Joker gains {C:blue}+25{} Chips.',
+            [3] = '{C:attention}Stone{} Cards held in hand provides {C:blue}-50{} Chips.',
+            [4] = '{C:inactive}(Currently provides {C:blue}+#1#{}{C:inactive} Chips){}'
         }
     },
     pos = {

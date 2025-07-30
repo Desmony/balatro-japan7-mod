@@ -9,8 +9,9 @@ SMODS.Joker{ --NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM
     loc_txt = {
         ['name'] = 'NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM',
         ['text'] = {
-            [1] = 'This Joker gains {X:red,C:white}X0.5{} Mult when using a {C:attention}Wheel of Fortune{}',
-            [2] = '{C:inactive}(Currently {X:red,C:white}X#1#{} Mult){}'
+            [1] = 'This Joker gains {X:red,C:white}X0.5{} Mult',
+            [2] = 'when using a {C:attention}Wheel of Fortune{}',
+            [3] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult){}'
         }
     },
     pos = {

@@ -11,7 +11,8 @@ SMODS.Joker{ --Anas
     loc_txt = {
         ['name'] = 'Anas',
         ['text'] = {
-            [1] = 'Creates a {C:purple}Fool{} consumable if the total of scoring cards is 14.'
+            [1] = 'Creates a {C:purple}Fool{} consumable',
+            [2] = 'if the total of scoring cards is 14.'
         }
     },
     pos = {
@@ -31,6 +32,9 @@ SMODS.Joker{ --Anas
     end,
 
     calculate = function(self, card, context)
+        if context.cardarea == G.jokers and context.before then
+            card.ability.extra.score_hand = 0
+        end
         if context.individual and context.cardarea == G.play and not context.blueprint then
             if context.other_card:get_id() == 14 then
                 card.ability.extra.score_hand = (card.ability.extra.score_hand) + 11
@@ -80,20 +84,6 @@ SMODS.Joker{ --Anas
                     if created_consumable then
                         card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Have you heard of the critically acclaimed MMORPG Final Fantasy XIV?", colour = G.C.PURPLE})
                     end
-                    return true
-                end,
-                    extra = {
-                        func = function()
-                    card.ability.extra.score_hand = 0
-                    return true
-                end,
-                        colour = G.C.BLUE
-                        }
-                }
-            else
-                return {
-                    func = function()
-                    card.ability.extra.score_hand = 0
                     return true
                 end
                 }

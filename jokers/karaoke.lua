@@ -9,10 +9,11 @@ SMODS.Joker{ --Karaoke
     loc_txt = {
         ['name'] = 'Karaoke',
         ['text'] = {
-            [1] = 'This joker gains {X:red,C:white}X0.5{} Mult if {C:attention}poker hand{} is a {C:attention}#2#{}.',
-            [2] = 'The required poker hand changes every hand played.',
-            [3] = 'Resets when defeating a boss blind.',
-            [4] = '{C:inactive}(Currently {X:red,C:white}X#1#{} Mult){}'
+            [1] = 'This joker gains {X:red,C:white}X0.5{} Mult',
+            [2] = 'if {C:attention}poker hand{} is a {C:attention}#2#{}.',
+            [3] = 'The required poker hand changes every hand played.',
+            [4] = 'Resets when defeating a boss blind.',
+            [5] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult){}'
         }
     },
     pos = {

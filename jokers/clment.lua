@@ -10,8 +10,9 @@ SMODS.Joker{ --Clément
     loc_txt = {
         ['name'] = 'Zogogo',
         ['text'] = {
-            [1] = 'This joker gains {C:red}+9{} Mult when you finish a round in one hand.',
-            [2] = '{C:inactive}(Currently {C:red}+#1#{} Mult){}'
+            [1] = 'This joker gains {C:red}+9{} Mult',
+            [2] = 'when you finish a round in one hand.',
+            [3] = '{C:inactive}(Currently {C:red}+#1#{}{C:inactive} Mult){}'
         }
     },
     pos = {

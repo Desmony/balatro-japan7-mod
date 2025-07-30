@@ -14,10 +14,13 @@ SMODS.Joker{ --Arbre Soleil 7
     loc_txt = {
         ['name'] = 'Arbre Soleil 7',
         ['text'] = {
-            [1] = '{C:green}#1# in #2#{} chance for each played {C:attention}7{} to create a {C:tarot}Sun{} card when scored',
-            [2] = '{C:green}#1# in #2#{} chance for each played {C:attention}7{} to create a {C:tarot}World{} card when scored',
-            [3] = '{C:green}0 in 2{} chance for each played {C:attention}7{} to create a {C:tarot}Lovers{} card when scored',
-            [4] = '{C:inactive}(Must have room){}'
+            [1] = '{C:green}#1# in #2#{} chance for each played {C:attention}7{}',
+            [2] = 'to create a {C:tarot}Sun{} card when scored.',
+            [3] = '{C:green}#1# in #2#{} chance for each played {C:attention}7{}',
+            [4] = 'to create a {C:tarot}World{} card when scored.',
+            [5] = '{C:green}0 in 2{} chance for each played {C:attention}7{}',
+            [6] = 'to create a {C:tarot}Lovers{} card when scored.',
+            [7] = '{C:inactive}(Must have room){}'
         }
     },
     pos = {

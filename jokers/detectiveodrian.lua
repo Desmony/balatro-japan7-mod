@@ -10,9 +10,14 @@ SMODS.Joker{ --Detective Odrian
     loc_txt = {
         ['name'] = 'Detective Odrian',
         ['text'] = {
-            [1] = 'When a face card is destroyed, Detective Odrian will designate a suspect card.',
-            [2] = 'When the suspect card is played, the card will be destroyed and this Joker will gain {X:red,C:white}X1{} Mult.',
-            [3] = '(Current suspect: {C:attention}#4#{} of {C:attention}#3#{}. Currently investigating: {C:attention}#1#{}. Currently provides {X:red,C:white}X#2#{} Mult)'
+            [1] = 'When a face card is destroyed,',
+            [2] = 'Detective Odrian will designate a suspect card.',
+            [3] = 'When the suspect card is played,',
+            [4] = 'the card will be destroyed and',
+            [5] = 'this Joker will gain {X:red,C:white}X1{} Mult.',
+            [6] = '{C:inactive}(Current suspect: {C:attention}#4#{}{C:inactive} of {C:attention}#3#{}.',
+            [7] = '{C:inactive}Currently investigating: {C:attention}#1#{}.',
+            [8] = '{C:inactive}Currently provides {X:red,C:white}X#2#{}{C:inactive} Mult)'
         }
     },
     pos = {

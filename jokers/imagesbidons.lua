@@ -12,8 +12,9 @@ SMODS.Joker{ --#images-bidons
         ['name'] = 'images-bidons',
         ['text'] = {
             [1] = '{C:blue}+50{} Chips for each {C:attention}Joker{} card.',
-            [2] = '{C:green}#1# in 20{} chance of {C:red}dying of cringe{} for each {C:attention}Joker{} at the end of the round.',
-            [3] = '{C:inactive}(Currently {C:blue}+#2#{} Chips and {C:green}#3# in 20{}){}'
+            [2] = '{C:green}#1# in 20{} chance of {C:red}dying of cringe{}',
+            [3] = 'for each {C:attention}Joker{} at the end of the round.',
+            [4] = '{C:inactive}(Currently {C:blue}+#2#{}{C:inactive} Chips and {C:green}#3# in 20{}{C:inactive}){}'
         }
     },
     pos = {
