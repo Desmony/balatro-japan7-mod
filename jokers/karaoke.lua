@@ -14,16 +14,24 @@ SMODS.Joker{ --Karaoke
             [3] = 'The required poker hand changes every hand played.',
             [4] = 'Resets when defeating a boss blind.',
             [5] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 4,
         y = 1
     },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
     cost = 5,
     rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
+    perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',

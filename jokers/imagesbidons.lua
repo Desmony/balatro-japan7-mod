@@ -15,16 +15,24 @@ SMODS.Joker{ --#images-bidons
             [2] = '{C:green}#1# in 20{} chance of {C:red}dying of cringe{}',
             [3] = 'for each {C:attention}Joker{} at the end of the round.',
             [4] = '{C:inactive}(Currently {C:blue}+#2#{}{C:inactive} Chips and {C:green}#3# in 20{}{C:inactive}){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 0,
         y = 1
     },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = false,
+	perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',

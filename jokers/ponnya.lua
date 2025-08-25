@@ -12,11 +12,18 @@ SMODS.Joker{ --Pon-nya!
             [1] = 'This Joker gains {C:red}+3{} Mult',
             [2] = 'if played hand contains a {C:attention}Three of a Kind{}',
             [3] = '{C:inactive}(Currently {C:red}+#1#{}{C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 8,
         y = 0
+    },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
     },
     cost = 6,
     rarity = 2,

@@ -13,16 +13,24 @@ SMODS.Joker{ --Anas
         ['text'] = {
             [1] = 'Creates a {C:purple}Fool{} consumable',
             [2] = 'if the total of scoring cards is 14.'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 3,
         y = 0
     },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
+    perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',

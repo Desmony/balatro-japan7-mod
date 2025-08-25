@@ -14,11 +14,18 @@ SMODS.Joker{ --Pierre Jeanjoker
             [2] = 'destroyed and this Joker gains {C:blue}+25{} Chips.',
             [3] = '{C:attention}Stone{} Cards held in hand provides {C:blue}-50{} Chips.',
             [4] = '{C:inactive}(Currently provides {C:blue}+#1#{}{C:inactive} Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 4,
         y = 0
+    },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
     },
     cost = 4,
     rarity = 1,

@@ -18,11 +18,18 @@ SMODS.Joker{ --Detective Odrian
             [6] = '{C:inactive}(Current suspect: {C:attention}#4#{}{C:inactive} of {C:attention}#3#{}.',
             [7] = '{C:inactive}Currently investigating: {C:attention}#1#{}.',
             [8] = '{C:inactive}Currently provides {X:red,C:white}X#2#{}{C:inactive} Mult)'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 2,
         y = 1
+    },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
     },
     cost = 8,
     rarity = 3,

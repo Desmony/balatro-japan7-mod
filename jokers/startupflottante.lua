@@ -12,11 +12,18 @@ SMODS.Joker{ --Startup flottante
             [1] = 'This joker gains {C:blue}+1-10{} Chips',
             [2] = 'when selling a {C:attention}Card{}',
             [3] = '{C:inactive}(Currently {C:blue}+#1#{}{C:inactive} Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 5,
         y = 1
+    },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
     },
     cost = 4,
     rarity = 1,

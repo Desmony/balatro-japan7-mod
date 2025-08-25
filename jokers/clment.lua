@@ -13,11 +13,18 @@ SMODS.Joker{ --Clément
             [1] = 'This joker gains {C:red}+9{} Mult',
             [2] = 'when you finish a round in one hand.',
             [3] = '{C:inactive}(Currently {C:red}+#1#{}{C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 2,
         y = 0
+    },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
     },
     cost = 5,
     rarity = 2,

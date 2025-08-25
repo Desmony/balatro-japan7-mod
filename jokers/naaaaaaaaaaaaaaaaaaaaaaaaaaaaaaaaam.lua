@@ -12,11 +12,18 @@ SMODS.Joker{ --NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM
             [1] = 'This Joker gains {X:red,C:white}X0.5{} Mult',
             [2] = 'when using a {C:attention}Wheel of Fortune{}',
             [3] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 7,
         y = 0
+    },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
     },
     cost = 5,
     rarity = 2,

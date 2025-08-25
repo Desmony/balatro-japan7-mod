@@ -14,16 +14,24 @@ SMODS.Joker{ --The Box
             [1] = '{C:red}+15{} Mult if played hand is now',
             [2] = 'your most played hand.',
             [3] = '{C:red}-5{} Mult otherwise.'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 5,
         y = 0
     },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
     cost = 4,
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
+    perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',

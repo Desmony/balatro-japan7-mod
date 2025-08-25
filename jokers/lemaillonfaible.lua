@@ -15,16 +15,24 @@ SMODS.Joker{ --Le Maillon Faible
             [2] = 'in your played hand if they score.',
             [3] = '{C:green}#1# in #2#{} chance of earning {C:gold}$5{}',
             [4] = 'when destroying those cards.'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 3,
         y = 1
     },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
     cost = 7,
     rarity = 3,
     blueprint_compat = false,
     eternal_compat = true,
+    perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',

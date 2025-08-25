@@ -13,16 +13,24 @@ SMODS.Joker{ --MKV Cocktail
             [1] = 'This joker gains {X:red,C:white}x0.5{} at the end of the round.',
             [2] = '{C:red}Self-destructs{} after {C:attention}#2#{} rounds.',
             [3] = '{C:inactive}(Currently {X:red,C:white}X#1#{}{C:inactive} Mult)'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
         x = 6,
         y = 0
     },
+    display_size = {
+        w = 71 * 1, 
+        h = 95 * 1
+    },
     cost = 6,
     rarity = 2,
     blueprint_compat = true,
     eternal_compat = false,
+	perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
