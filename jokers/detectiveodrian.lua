@@ -39,6 +39,10 @@ SMODS.Joker{ --Detective Odrian
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    soul_pos = {
+        x = 6,
+        y = 1
+    },
 
     loc_vars = function(self, info_queue, card)
         return {vars = {localize(card.ability.extra.active_chase), card.ability.extra.mult, localize((G.GAME.current_round.suit_suspect_card or {}).suit or 'Spades', 'suits_singular'), localize((G.GAME.current_round.rank_suspect_card or {}).rank or 'Ace', 'ranks')}, colours = {G.C.SUITS[(G.GAME.current_round.suit_suspect_card or {}).suit or 'Spades']}}

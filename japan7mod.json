@@ -5,7 +5,7 @@
     "Nyguita"
   ],
   "description": "Jokers for and inspired by the Japan7 club at ENSEEIHT in Toulouse. Custom jokers created with Joker Forge.",
-  "prefix": "japan7mo",
+  "prefix": "japan7mod",
   "main_file": "main.lua",
   "version": "1.0.0",
   "priority": 0,

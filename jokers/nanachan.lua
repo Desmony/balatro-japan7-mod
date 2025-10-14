@@ -51,7 +51,7 @@ SMODS.Joker{ --Nana-Chan
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main then
                 return {
-                    Xmult = card.ability.extra.money÷15 + (math.floor(G.GAME.dollars / 15))
+                    Xmult = card.ability.extra.money÷15 + (math.floor(lenient_bignum(G.GAME.dollars / 15)))
                 }
         end
     end

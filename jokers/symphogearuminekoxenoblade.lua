@@ -36,12 +36,8 @@ SMODS.Joker{ --Symphogear Umineko Xenoblade
     discovered = true,
     atlas = 'CustomJokers',
 
-    loc_vars = function(self, info_queue, card)
-        return {vars = {}}
-    end,
-
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.hand and not context.end_of_round then
+        if context.individual and context.cardarea == G.hand and not context.end_of_round  then
             if (context.other_card:get_id() == 12 and context.other_card:is_suit("Spades")) then
                 return {
                     Xmult = card.ability.extra.Xmult,

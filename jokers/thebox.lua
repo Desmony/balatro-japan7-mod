@@ -36,10 +36,6 @@ SMODS.Joker{ --The Box
     discovered = true,
     atlas = 'CustomJokers',
 
-    loc_vars = function(self, info_queue, card)
-        return {vars = {}}
-    end,
-
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.before then
             if (function()

@@ -50,7 +50,7 @@ SMODS.Joker{ --Pierre Jeanjoker
                 context.other_card.should_destroy = true
                 card.ability.extra.pluschips = (card.ability.extra.pluschips) + 25
                 return {
-                    message = "Jeanjean take"
+                    message = "Jeanjean take!"
                 }
             end
         end
@@ -59,7 +59,7 @@ SMODS.Joker{ --Pierre Jeanjoker
                     chips = card.ability.extra.pluschips
                 }
         end
-        if context.individual and context.cardarea == G.hand and not context.end_of_round and not context.blueprint then
+        if context.individual and context.cardarea == G.hand and not context.end_of_round  then
             if SMODS.get_enhancements(context.other_card)["m_stone"] == true then
                 return {
                     chips = card.ability.extra.chips2
