@@ -36,6 +36,7 @@ SMODS.Joker{ --Le Maillon Faible
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
         return {vars = {G.GAME.probabilities.normal, card.ability.extra.odds, card.ability.extra.lowestrankinhand}}

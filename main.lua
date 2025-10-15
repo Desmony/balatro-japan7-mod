@@ -44,7 +44,6 @@ SMODS.ObjectType({
         ["j_diet_cola"] = true,
         ["j_popcorn"] = true,
         ["j_ramen"] = true,
-        ["j_selzer"] = true,
-        ["japan7mod_mkvcocktail"] = true
+        ["j_selzer"] = true
     },
 })

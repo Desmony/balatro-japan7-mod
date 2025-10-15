@@ -35,6 +35,7 @@ SMODS.Joker{ --The Box
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.before then

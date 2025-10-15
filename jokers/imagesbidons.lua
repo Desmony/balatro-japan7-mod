@@ -36,6 +36,7 @@ SMODS.Joker{ --#images-bidons
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
 	return {vars = {G.GAME.probabilities.normal, (G.jokers and G.jokers.cards and #G.jokers.cards or 0)*50, (G.jokers and G.jokers.cards and #G.jokers.cards or 0)*(G.GAME.probabilities.normal), card.ability.extra.jokercount}}

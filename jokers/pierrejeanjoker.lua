@@ -36,8 +36,15 @@ SMODS.Joker{ --Pierre Jeanjoker
     discovered = true,
     enhancement_gate = 'm_stone',
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
+        local info_queue_0 = G.P_CENTERS["m_stone"]
+        if info_queue_0 then
+            info_queue[#info_queue + 1] = info_queue_0
+        else
+            error("JOKERFORGE: Invalid key in infoQueues. \"m_stone\" isn't a valid Object key, Did you misspell it or forgot a modprefix?")
+        end
         return {vars = {card.ability.extra.pluschips}}
     end,
 

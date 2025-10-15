@@ -42,8 +42,29 @@ SMODS.Joker{ --Arbre Soleil 7
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
+        local info_queue_0 = G.P_CENTERS["c_sun"]
+        local info_queue_1 = G.P_CENTERS["c_world"]
+        local info_queue_2 = G.P_CENTERS["c_lovers"]
+        if info_queue_0 then
+            info_queue[#info_queue + 1] = info_queue_0
+        else
+            error("JOKERFORGE: Invalid key in infoQueues. \"c_sun\" isn't a valid Object key, Did you misspell it or forgot a modprefix?")
+        end
+        
+        if info_queue_1 then
+            info_queue[#info_queue + 1] = info_queue_1
+        else
+            error("JOKERFORGE: Invalid key in infoQueues. \"c_world\" isn't a valid Object key, Did you misspell it or forgot a modprefix?")
+        end
+        
+        if info_queue_2 then
+            info_queue[#info_queue + 1] = info_queue_2
+        else
+            error("JOKERFORGE: Invalid key in infoQueues. \"c_lovers\" isn't a valid Object key, Did you misspell it or forgot a modprefix?")
+        end
         return {vars = {G.GAME.probabilities.normal, card.ability.extra.odds, card.ability.extra.odds2, card.ability.extra.Tarot}}
     end,
 

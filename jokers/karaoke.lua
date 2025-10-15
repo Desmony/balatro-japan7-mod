@@ -35,6 +35,7 @@ SMODS.Joker{ --Karaoke
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.mult, localize((G.GAME.current_round.poker_hand_to_do_hand or 'High Card'), 'poker_hands')}}

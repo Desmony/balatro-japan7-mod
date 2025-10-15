@@ -34,6 +34,7 @@ SMODS.Joker{ --MKV Cocktail
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true, ["japan7mod_food"] = true},
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.multvar, card.ability.extra.nbrounds}}

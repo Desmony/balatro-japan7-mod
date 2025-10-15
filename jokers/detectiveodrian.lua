@@ -39,6 +39,7 @@ SMODS.Joker{ --Detective Odrian
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
     soul_pos = {
         x = 6,
         y = 1

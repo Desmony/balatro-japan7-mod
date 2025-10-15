@@ -34,8 +34,15 @@ SMODS.Joker{ --Anas
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    pools = { ["japan7mod_jokers"] = true },
 
     loc_vars = function(self, info_queue, card)
+        local info_queue_0 = G.P_CENTERS["c_fool"]
+        if info_queue_0 then
+            info_queue[#info_queue + 1] = info_queue_0
+        else
+            error("JOKERFORGE: Invalid key in infoQueues. \"c_fool\" isn't a valid Object key, Did you misspell it or forgot a modprefix?")
+        end
         return {vars = {}}
     end,
 
