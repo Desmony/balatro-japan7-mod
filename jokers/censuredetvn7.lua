@@ -11,7 +11,7 @@ SMODS.Joker{ --Censure de TVn7
         ['name'] = 'Censure de TVn7',
         ['text'] = {
             [1] = '{X:red,C:white}X3{} Mult. Will destroy itself',
-            [2] = 'in {C:attention}#2#{} rounds. Played {C:attention}#1#{}',
+            [2] = 'in {C:attention}#2#{} hands. Played {C:attention}#1#{}',
             [3] = 'increase the countdown by one.',
             [4] = '{C:inactive}(Rank changes every hand){}'
         },
