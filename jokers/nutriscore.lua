@@ -8,7 +8,7 @@ SMODS.Joker{ --Nutriscore
     loc_txt = {
         ['name'] = 'Nutriscore',
         ['text'] = {
-            [1] = '{C:red}+1 {}Mult for each non-enhanced card in your deck.',
+            [1] = '{C:red}+0.5{} Mult for each non-enhanced card in your deck.',
             [2] = '{C:inactive}(Currently {}{C:red}+#1#{} {C:inactive}Mult){}'
         },
         ['unlock'] = {
@@ -35,7 +35,7 @@ SMODS.Joker{ --Nutriscore
 
     loc_vars = function(self, info_queue, card)
         
-        return {vars = {card.ability.extra.number_non_enhanced_cards}}
+        return {vars = {card.ability.extra.number_non_enhanced_cards / 2}}
     end,
 
     calculate = function(self, card, context)
@@ -43,7 +43,7 @@ SMODS.Joker{ --Nutriscore
                 --local number_non_enhanced_cards_value = card.ability.extra.number_non_enhanced_cards
                 card.ability.extra.number_non_enhanced_cards = (function() local count = 0; for _, card in ipairs(G.playing_cards or {}) do if not next(SMODS.get_enhancements(card)) then count = count + 1 end end; return count end)()
                 return {
-                    mult = card.ability.extra.number_non_enhanced_cards
+                    mult = card.ability.extra.number_non_enhanced_cards / 2
                 }
         end
         if (context.remove_playing_cards) or (context.buying_card and context.card.config.center.key == self.key and context.cardarea == G.jokers) or (context.playing_card_added) or (context.using_consumeable) or (context.setting_blind) then
