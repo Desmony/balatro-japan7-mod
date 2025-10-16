@@ -9,7 +9,7 @@ SMODS.Joker{ --Croco-sensei
     loc_txt = {
         ['name'] = 'Croco-sensei',
         ['text'] = {
-            [1] = 'Gains {C:blue}+10{} Chips for each other',
+            [1] = 'Gains {C:blue}+5{} Chips for each other',
             [2] = 'joker at the end of the round.',
             [3] = '{C:inactive}(Currently {}{C:blue}+#1#{} {C:inactive}Chips){}'
         },
@@ -49,7 +49,7 @@ SMODS.Joker{ --Croco-sensei
         if context.end_of_round and context.game_over == false and context.main_eval and not context.blueprint then
                 return {
                     func = function()
-                    card.ability.extra.nb_chips = (card.ability.extra.nb_chips) + ((#(G.jokers and G.jokers.cards or {})) - 1) * 10
+                    card.ability.extra.nb_chips = (card.ability.extra.nb_chips) + ((#(G.jokers and G.jokers.cards or {})) - 1) * 5
                     return true
                 end,
                      message = "See you next class!"

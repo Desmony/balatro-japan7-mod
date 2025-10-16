@@ -5,7 +5,7 @@ SMODS.Joker{ --Fumo Friday
             nb_rounds = 0,
             currentweekday = 0,
             Xmult = 3,
-            Xmult2 = 3
+            Xmult2 = 1.5
         }
     },
     loc_txt = {

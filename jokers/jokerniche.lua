@@ -9,9 +9,10 @@ SMODS.Joker{ --Joker niche
     loc_txt = {
         ['name'] = 'Joker niche',
         ['text'] = {
-            [1] = 'Creates a {C:spectral}Soul{} card after selling {C:attention}24{} cards.',
-            [2] = '{C:inactive}(Currently {}{C:attention}#1#{}{C:inactive}/24){}',
-            [3] = '{C:inactive}(Must have room){}'
+            [1] = 'After selling {C:attention}24{} cards sell this',
+            [2] = 'card to create a {C:spectral}Soul{} card.',
+            [3] = '{C:inactive}(Currently {}{C:attention}#1#{}{C:inactive}/24){}',
+            [4] = '{C:inactive}(Must have room){}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -25,7 +26,7 @@ SMODS.Joker{ --Joker niche
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 10,
+    cost = 13,
     rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
@@ -47,14 +48,17 @@ SMODS.Joker{ --Joker niche
 
     calculate = function(self, card, context)
         if context.selling_card  and not context.blueprint then
-            if (card.ability.extra.nb_cards_sold or 0) == 23 then
                 return {
                     func = function()
-                    card.ability.extra.nb_cards_sold = 0
+                    card.ability.extra.nb_cards_bought = (card.ability.extra.nb_cards_bought) + 1
                     return true
-                end,
-                    extra = {
-                        func = function()
+                end
+                }
+        end
+        if context.selling_self  and not context.blueprint then
+            if (card.ability.extra.nb_cards_bought or 0) >= 24 then
+                return {
+                    func = function()
       
     for i = 1, math.min(1, G.consumeables.config.card_limit - #G.consumeables.cards) do
             G.E_MANAGER:add_event(Event({
@@ -74,16 +78,7 @@ SMODS.Joker{ --Joker niche
                         card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Reincarnation", colour = G.C.SECONDARY_SET.Spectral})
                     end
                     return true
-                  end,
-                        colour = G.C.SECONDARY_SET.Spectral
-                        }
-                }
-            else
-                return {
-                    func = function()
-                    card.ability.extra.nb_cards_sold = (card.ability.extra.nb_cards_sold) + 1
-                    return true
-                end
+                  end
                 }
             end
         end

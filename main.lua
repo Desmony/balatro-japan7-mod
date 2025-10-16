@@ -39,7 +39,7 @@ SMODS.ObjectType({
         ["j_gros_michel"] = true,
         ["j_egg"] = true,
         ["j_ice_cream"] = true,
-        ["j_cavendish"] = true,
+        --["j_cavendish"] = true,
         ["j_turtle_bean"] = true,
         ["j_diet_cola"] = true,
         ["j_popcorn"] = true,

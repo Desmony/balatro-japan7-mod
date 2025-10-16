@@ -11,10 +11,10 @@ SMODS.Joker{ --GodNam
     loc_txt = {
         ['name'] = 'GodNam',
         ['text'] = {
-            [1] = '{C:common}Common{} Jokers each gives {X:blue,C:white}x2{} Chips.',
-            [2] = '{C:uncommon}Uncommon{} Jokers each gives {X:red,C:white}X1.5{} Mult.',
-            [3] = '{C:rare}Rare{} Jokers each gives {X:red,C:white}X2{} Mult.',
-            [4] = '{C:legendary}Legendary{} Jokers each gives {X:red,C:white}x3{} Mult.'
+            --[1] = '{C:common}Common{} Jokers each gives {X:blue,C:white}x2{} Chips.',
+            --[2] = '{C:uncommon}Uncommon{} Jokers each gives {X:red,C:white}X1.5{} Mult.',
+            [1] = '{C:rare}Rare{} Jokers each give {X:red,C:white}X2{} Mult.',
+            [2] = '{C:legendary}Legendary{} Jokers each give {X:red,C:white}x3{} Mult.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -53,18 +53,6 @@ SMODS.Joker{ --GodNam
     calculate = function(self, card, context)
         if context.other_joker  then
             if (function()
-    return context.other_joker.config.center.rarity == 1
-end)() then
-                return {
-                    x_chips = card.ability.extra.xchips
-                }
-            elseif (function()
-    return context.other_joker.config.center.rarity == 2
-end)() then
-                return {
-                    Xmult = card.ability.extra.Xmult
-                }
-            elseif (function()
     return context.other_joker.config.center.rarity == 3
 end)() then
                 return {
