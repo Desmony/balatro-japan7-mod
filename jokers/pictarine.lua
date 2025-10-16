@@ -10,7 +10,8 @@ SMODS.Joker{ --Pictarine
         ['text'] = {
             [1] = 'Destroy a random joker and',
             [2] = 'add {C:dark_edition}Negative{} to another joker',
-            [3] = 'when defeating the {C:attention}Boss Blind{}.'
+            [3] = 'when defeating the {C:attention}Boss Blind{}.',
+            [4] = 'Can\'t destroy {C:dark_edition}Negative{} Jokers.'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -39,7 +40,7 @@ SMODS.Joker{ --Pictarine
             --Destroy a Joker
             local destructable_jokers = {}
                 for i, joker in ipairs(G.jokers.cards) do
-                    if joker ~= card and not SMODS.is_eternal(joker) and not joker.getting_sliced then
+                    if joker ~= card and not SMODS.is_eternal(joker) and not joker.getting_sliced and not (joker.edition and joker.edition.negative) then
                         table.insert(destructable_jokers, joker)
                     end
                 end

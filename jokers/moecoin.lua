@@ -28,7 +28,7 @@ SMODS.Joker{ --Moecoin
         w = 71 * 1, 
         h = 69 * 1
     },
-    cost = 4,
+    cost = 7,
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
