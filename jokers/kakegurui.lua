@@ -34,6 +34,7 @@ SMODS.Joker{ --Kakegurui
     perishable_compat = true,
     unlocked = true,
     discovered = true,
+    enhancement_gate = 'm_lucky',
     atlas = 'CustomJokers',
     pools = { ["japan7mod_jokers"] = true },
 
