@@ -30,7 +30,7 @@ SMODS.Joker{ --Censure de TVn7
     cost = 5,
     rarity = 2,
     blueprint_compat = true,
-    eternal_compat = true,
+    eternal_compat = false,
     perishable_compat = true,
     unlocked = true,
     discovered = true,

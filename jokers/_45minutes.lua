@@ -8,7 +8,7 @@ SMODS.Joker{ --45minutes
     loc_txt = {
         ['name'] = '45minutes',
         ['text'] = {
-            [1] = 'Adds 5 times the number of minutes',
+            [1] = 'Adds 3 times the number of minutes',
             [2] = 'since you bought this joker to Mult.'
         },
         ['unlock'] = {
@@ -41,7 +41,7 @@ SMODS.Joker{ --45minutes
         if context.cardarea == G.jokers and context.joker_main  then
             local temp = os.time()
             temp = temp - card.ability.extra.time_bought
-            temp = (math.floor(temp / 12))
+            temp = (math.floor(temp / 20))
             return {
                 mult = temp
             }
