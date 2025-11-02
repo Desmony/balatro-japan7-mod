@@ -59,7 +59,7 @@ SMODS.Joker{ --Censure de TVn7
                     Xmult = card.ability.extra.Xmult
                 }
         end
-        if context.cardarea == G.jokers and context.joker_main not context.blueprint then
+        if context.cardarea == G.jokers and context.joker_main and not context.blueprint then
                 if G.playing_cards then
                         local valid_rank_to_achieve_cards = {}
                         for _, v in ipairs(G.playing_cards) do
